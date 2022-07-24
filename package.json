@@ -17,7 +17,7 @@
     "@angular/forms": "^14.0.0",
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
-    "permit-fe-sdk": "file:../permit-fe-sdk",
+    "permit-fe-sdk": "1.1.0",
     "@angular/router": "^14.0.0",
     "@casl/ability": "^5.4.4",
     "@casl/angular": "^7.0.0",
