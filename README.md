@@ -1,27 +1,23 @@
 # FesdkDemoAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
+## How to run this example
 
-## Development server
+### Permit setup
+Go to permit dashboard and create a `board` resource with `create` and `update` actions.
+Create a admin role and give it the permission to `create` and `update` the `board` resource.
+Create a user and assign the admin role to it (remember its key, you will need it).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Example server setup
+Add your permit environment secret key to `server/server.ts` instead of `permit_secret_XXXXXXXXXXXXX`
+Run `npm install` in the `server` directory.
+Run `npm start` in the `server` directory.
 
-## Code scaffolding
+### Example client setup
+Run `npm install` in the root directory.
+Run `npm start` in the root directory.
+Go to `src/app/CaslAbility.ts` and change the user `test@test.com` to the key of the user you created in the permit dashboard.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Now you can go to `http://localhost:4200` and see the example in action.
+Add or remove permissions from the user in the permit dashboard and see the changes in the web app.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
